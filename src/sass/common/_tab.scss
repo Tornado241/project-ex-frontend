@@ -1,0 +1,37 @@
+.app-tab {
+    .ant-tabs-tab {
+        border: none !important;
+        @include _flexBox;
+        // height: 28px;
+        .ant-tabs-tab-btn {
+            font-weight: 500;
+            font-size: $font_size_base - 2;
+            line-height: 16px;
+            @include _flexBox;
+            color: $color_text_select;
+            padding: 6px 12px;
+        }
+        &.ant-tabs-tab-active {
+            .ant-tabs-tab-btn {
+                background-color: $color_select_text;
+                border-radius: 100px;
+                color: $color_tab_active;
+                font-weight: 300;
+                font-size: $font_size_base - 2;
+                line-height: 16px;
+            }
+        }
+    }
+    .ant-tabs-tab + .ant-tabs-tab {
+        margin: 0 0 0 20px;
+    }
+    .ant-tabs-ink-bar {
+        display: none;
+    }
+    .ant-tabs-nav {
+        margin-bottom: 0;
+        &::before {
+            border-color: $color_border_input;
+        }
+    }
+}

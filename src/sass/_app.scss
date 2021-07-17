@@ -1,0 +1,24 @@
+// init style common
+@import './common/variables';
+@import './common/minxin';
+@import './common/common';
+@import './common/button';
+@import './common/input';
+@import './common/icon';
+@import './common/select';
+@import './common/modal';
+@import './common/tooltip';
+@import './common/alert';
+@import './common/typography';
+@import './common/popver';
+@import './common/tab';
+@import './common/table';
+@import './common/step';
+// style layout
+@import './layout/header';
+@import './layout/footer';
+@import './layout/layout';
+
+// // style for pages
+// @import './page/home';
+// @import './page/myTransaction';

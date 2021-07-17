@@ -1,0 +1,102 @@
+// List break point screen
+// same as "sm" of antd < 576px
+$screen-xs: 575px;
+
+// same as "sm" of antd < 576px
+$screen-sm: 767px;
+
+// same as "md" of antd < 768px
+$screen-md: 991px;
+
+// same as "lg" of antd < 1200px
+$screen-lg: 1199px;
+
+// same as 1280px
+$screen-xl: 1280px;
+
+// color background page
+$color_bg_page: #f8f8fb;
+
+// color primary app
+$color_primary: #3772ff;
+
+// color border input
+$color_border_input: #e6e8ec;
+
+// color placeholder input
+$color_placeholder: #9ea7bc;
+
+// color background title network info
+$color_bg_title_network_info: #e5ecff;
+
+// color text select
+$color_text_select: #777e90;
+
+// background hover notify
+$color_background_hover_notify: #f4f5f6;
+
+// color bg disable
+$color_bg_disable: #f9f9f9;
+
+// color title section
+$color_title_section: #23262f;
+
+// color background card\
+$color_bg_card: #f3f6fb;
+
+// color status claimed
+$color_status_claimed: #45b26b;
+
+// color text alert warning
+$color_text_alert_warning: #ef466f;
+
+// color select text
+$color_select_text: #4f5566;
+
+// color tab active
+$color_tab_active: #fcfcfd;
+
+// color text select paginate
+$color_text_select_paginate: #8b8ea9;
+
+// color button metamask
+$color_btn_metamask: #dc6a00;
+
+$color_red_grocery: #ff0a6c;
+
+// color bg alert warning
+$color_alert_warning: #fcdf7e;
+
+// color background button-primary
+$color_bg_button_primary: linear-gradient(135deg, #ff0a6c -16.8%, #2d27ff 138.64%);
+$color_bg_button_primary-hover: linear-gradient(-135deg, #ff0a6c -16.8%, #2d27ff 138.64%);
+
+// color box shadow tooltip
+$color_box_shadow_tooltip: 0px 0px 60px 10px rgba(31, 47, 70, 0.12);
+
+// color tag
+$color_bg_button_learn_more: #e6e6e6;
+
+// color bg select border less
+$color_bg_select_less: #f7f7f7;
+
+// color high lights
+$color_hight_light: #d56bbf;
+
+// color dark
+$color_dark: #141416;
+
+//color step wait
+$color_step_wait: #e6e6e6;
+
+//color text primary
+$color_primary: #7666ff;
+
+// width of container page
+$width_container: 1160px;
+
+// base font size
+$font_size_base: 16px;
+
+// box-shadow-card-search
+$box_shadow_card_swap: 0px 0px 30px rgba(120, 120, 120, 0.15);

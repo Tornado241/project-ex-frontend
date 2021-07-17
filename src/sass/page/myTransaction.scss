@@ -1,0 +1,146 @@
+.myTransaction {
+  &__page {
+    margin-top: 112px;
+  }
+  &__container {
+    max-width: 1160px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .table-transaction {
+    position: relative;
+    padding-top: 27px;
+  }
+  .button-search-transaction {
+    position: absolute;
+    top: -66px;
+    right: 0;
+    @include _flexBox;
+    padding: 1px 10px;
+    border: 2px solid $color_border_input;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
+
+.cell-copy-address {
+  @include _flexBox(center, flex-start);
+  .copy-icon.ant-typography {
+    height: 20px !important;
+    > * {
+      height: 20px !important;
+    }
+    .icon-copy {
+      width: 14px;
+    }
+  }
+}
+
+.cell-view-detail {
+  color: $color_primary !important;
+  border: 2px solid $color_primary;
+  cursor: pointer;
+  padding: 4px 5px;
+  width: 90px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.swap-status.ant-tag {
+  background: transparent;
+  // border: 2px solid white;
+  border-radius: 4px;
+  padding: 5px 7px;
+  margin: 0;
+  min-width: 85px;
+  text-align: center;
+  font-weight: 600;
+  border: none;
+  font-size: $font_size_base - 4;
+  &.CLAIMED {
+    color: $color_status_claimed;
+    background: rgba(0, 178, 29, 0.1);
+  }
+  &.FAILED {
+    color: $color_text_alert_warning;
+    background: rgba(239, 70, 111, 0.1);
+  }
+  &.PROCESSING {
+    color: $color_primary;
+    background: rgba(55, 114, 255, 0.1);
+  }
+  &.UNCLAIMED {
+    color: $color_btn_metamask;
+    background: rgba(220, 106, 0, 0.1);
+  }
+}
+
+.transaction-type {
+  .icon-token {
+    width: 20px;
+    margin-right: 4px;
+  }
+  .icon-arrow-right-light {
+    margin: 0 8px;
+  }
+}
+
+.control-transaction-wrap {
+  .warning-text.ant-typography {
+    color: $color_text_alert_warning;
+    font-size: $font_size_base - 4;
+    line-height: 15px;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+.popover-search-transaction {
+  .ant-popover-inner {
+    box-shadow: 0px 0px 60px 10px rgba(31, 47, 70, 0.12);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .ant-popover-inner-content {
+    position: relative;
+    padding: 40px;
+
+    .search-title.ant-typography {
+      font-weight: 600;
+      font-size: $font_size_base;
+      line-height: 26px;
+    }
+    .form-search-transaction {
+      max-width: 460px;
+      width: 100%;
+      min-width: 460px;
+    }
+    .close-icon {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  .ant-btn.app-btn {
+    max-width: 100%;
+    width: 100%;
+  }
+}

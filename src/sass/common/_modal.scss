@@ -1,0 +1,35 @@
+// @import '../components/modal_connect_wallet.scss';
+// @import '../components/modal_confirm_swap.scss';
+// @import '../components/modal_submit_swap.scss';
+// @import '../components/modal_wrong_network.scss';
+// @import '../components/modal_transaction_detail.scss';
+
+.ant-modal.app-modal {
+    .ant-modal-content {
+        box-shadow: $box_shadow_card_swap;
+        border-radius: 16px;
+        .ant-modal-body {
+            padding: 32px;
+            .ant-spin.app-loading-circle {
+                width: max-content;
+                margin: auto;
+                display: block;
+            }
+        }
+        .ant-modal-close {
+            top: 32px;
+            right: 32px;
+            .ant-modal-close-x {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .modal-title {
+            font-weight: 600;
+            font-size: $font_size_base + 12;
+            line-height: 42px;
+            text-align: center;
+            color: $color_title_section;
+        }
+    }
+}

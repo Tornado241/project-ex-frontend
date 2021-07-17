@@ -1,0 +1,100 @@
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: $color_title_section;
+    &.ant-typography {
+        color: $color_title_section;
+    }
+}
+
+.title-page.ant-typography {
+    font-weight: 600;
+    font-size: $font_size_base + 24;
+    line-height: 48px;
+    margin-bottom: 0;
+}
+.title-1.ant-typography {
+    font-weight: 600;
+    font-size: $font_size_base + 12;
+    line-height: 42px;
+    margin: 0;
+}
+
+.title-2.ant-typography {
+    margin: 0;
+    font-weight: 600;
+    font-size: $font_size_base;
+    line-height: 26px;
+}
+
+.title-3.ant-typography {
+    font-weight: 600;
+    font-size: $font_size_base;
+    line-height: 26px;
+}
+
+.dec-1.ant-typography {
+    margin: 0;
+    font-size: $font_size_base - 2;
+    line-height: 21px;
+    color: $color_select_text;
+}
+
+.dec-2.ant-typography {
+    margin: 0;
+    font-size: $font_size_base;
+    line-height: 26px;
+    color: $color_select_text;
+}
+
+.properties-1.ant-typography {
+    margin: 0;
+    font-weight: 500;
+    font-size: $font_size_base + 4;
+    line-height: 28px;
+    color: $color_select_text;
+}
+
+.mess-alert-1.ant-typography {
+    font-weight: 600;
+    font-size: $font_size_base;
+    line-height: 26px;
+    color: $color_text_alert_warning;
+    margin-bottom: 0;
+}
+
+.mess-alert-2.ant-typography {
+    color: $color_select_text;
+    font-size: $font_size_base - 2;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+span.dec-small {
+    font-weight: 500;
+    font-size: $font_size_base - 4;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1px;
+}
+.hl {
+    color: $color_hight_light !important;
+    background: -webkit-linear-gradient(#c71293, #a616aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hl-alert {
+    color: $color_text_alert_warning !important;
+}
+
+.cell-date.ant-typography {
+    font-size: $font_size_base - 4;
+    margin-bottom: 0px;
+}

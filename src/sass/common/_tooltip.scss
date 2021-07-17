@@ -1,0 +1,14 @@
+.ant-tooltip.tooltip-help {
+    .ant-tooltip-inner {
+        color: $color_select_text;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 12px;
+        box-shadow: $color_box_shadow_tooltip;
+        border-radius: 12px;
+        text-align: center;
+    }
+}
+.icon-svg-tooltip {
+    margin-left: 7px;
+}

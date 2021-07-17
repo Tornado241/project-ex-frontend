@@ -1,0 +1,110 @@
+@mixin _styleAntButton($className, $primary) {
+  &.#{$className} {
+    background-image: $primary;
+    border: none;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      border-radius: inherit;
+      background-image: $color_bg_button_primary-hover;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      z-index: -100;
+      transition: opacity 0.5s;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      background-image: $primary;
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.ant-btn.app-btn {
+  border-radius: 20px;
+  height: 40px;
+  > span {
+    font-size: $font_size_base -1;
+    line-height: 21px;
+    color: white;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  &.outline {
+    border-color: $color_border_input;
+    span {
+      font-weight: 500;
+      font-size: $font_size_base - 1;
+      line-height: 22px;
+      color: $color_select_text;
+    }
+  }
+  @include _styleAntButton('ant-btn-primary', $color_bg_button_primary);
+}
+
+.btn-group-control {
+  margin-top: 33px;
+  @include _flexBox;
+  > div:first-child {
+    margin-right: 24px;
+  }
+  > button {
+    margin-left: 24px;
+  }
+  div,
+  button {
+    width: 100%;
+  }
+}
+
+.ant-btn-background-ghost.app-btn {
+  border: 2px solid $color_border_input;
+  color: $color_text_select;
+  @include _flexBox;
+  > svg {
+    margin-right: 4px;
+  }
+  &:hover {
+    background: #777e903b !important;
+    opacity: 0.7;
+  }
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #ff0a6c, #2d27ff);
+  @include _flexBox;
+  padding: 1px;
+  width: 100%;
+  border-radius: 22px;
+  height: 44px;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 #0004;
+  span {
+    user-select: none;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    animation: pl1 1s infinite;
+    opacity: 0.5;
+  }
+  .btn-wrap {
+    width: 100%;
+    height: 100%;
+    @include _flexBox;
+    background-color: white;
+    border-radius: 21px;
+  }
+}

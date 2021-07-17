@@ -1,0 +1,10 @@
+html,
+body {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    .ant-layout {
+        min-height: 100vh;
+        background-color: $color_bg_page;
+    }
+}

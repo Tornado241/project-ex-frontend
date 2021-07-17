@@ -1,0 +1,64 @@
+footer.ant-layout-footer {
+    padding: 20px 50px;
+    margin-top: 77px;
+    background: white;
+    .text-copyright {
+        font-weight: 500;
+        margin-top: 100px;
+    }
+    .footer-col-logo {
+        img {
+            width: 202px;
+            margin-bottom: 11px;
+        }
+        .social-wrap {
+            margin-top: 20px;
+            a {
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .footer-col {
+        .title-2 {
+            margin-bottom: 20px;
+        }
+        .dec-1 {
+            font-weight: 500;
+            color: $color_select_text;
+            margin-bottom: 16px;
+            display: block;
+        }
+    }
+    .footer-container {
+        width: 100%;
+        margin: auto !important;
+        max-width: $width_container;
+        @include _flexBox(flex-start);
+        justify-content: space-between;
+        padding: 0 20px;
+        padding-top: 55px;
+    }
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .footer-col-email {
+        .icon-email {
+            margin-right: 5px;
+        }
+    }
+}
+
+@include _responsive(lg) {
+    footer.ant-layout-footer {
+        padding-left: 32px;
+        padding-right: 32px;
+        .footer-container {
+            padding: 0;
+            padding-top: 55px;
+        }
+    }
+}
