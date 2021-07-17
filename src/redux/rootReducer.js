@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import { addressReducer } from './reducers/addressReducer';
+import { projectReducer } from './reducers/projectReducer';
 
 export default combineReducers({
-  addressReducer,
+  projectReducer,
 });

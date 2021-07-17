@@ -1,4 +1,18 @@
-@import '../components/swap_token.scss';
-@import '../components/how_work.scss';
-@import '../components/token_distribution.scss';
-@import '../components/table_home.scss';
+.home {
+  &__container {
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .title-page.ant-typography {
+    text-align: center;
+    font-size: $font_size_base + 15;
+  }
+  .title-project {
+    font-weight: 500;
+  }
+}
+
+main.ant-layout-content {
+  background-color: white;
+}

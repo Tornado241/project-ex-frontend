@@ -12,23 +12,22 @@ function TableCommon({
   pageSizeOptions = [],
   onChangeTable,
   onChangePagination,
-  size,
   enablePagination = true,
   ...props
 }) {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   return (
     <div className="table">
       <Table
         className="table__table"
-        locale={{ emptyText: <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description={t('common.noData')} /> }}
+        locale={{ emptyText: <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description={'Không có dữ liệu'} /> }}
         pagination={false}
         columns={columns}
         bordered
         rowClassName={rowClassName}
         dataSource={dataSource}
         onChange={onChangeTable}
-        rowKey={record => record._id}
+        rowKey={record => record?.id}
         showSorterTooltip={false}
         {...props}
       />
@@ -40,7 +39,7 @@ function TableCommon({
             current={current}
             pageSize={pageSize}
             onChange={onChangePagination}
-            locale={{ items_per_page: `/ ${t('table.text_page_size')}` }}
+            locale={{ items_per_page: `/ page` }}
             showSizeChanger
           />
         </div>

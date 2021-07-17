@@ -135,3 +135,5 @@ export const SORT_FORMAT = {
 };
 
 export const TIME_OUT_PROGRESS_SWAP = 1000 * 60 * 2;
+
+export const API_URL = process.env.REACT_APP_API_URL;

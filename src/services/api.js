@@ -27,7 +27,7 @@ const getFullUrl = url => {
   if (!url.startsWith('/')) {
     url = '/' + url;
   }
-  return `${process.env.REACT_APP_API_URL}` + url;
+  return `${process.env.REACT_APP_API_URL}/api` + url;
 };
 
 const resetToLogin = () => {

@@ -1,104 +1,104 @@
 .center-block {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
 .txt-center {
-    text-align: center;
+  text-align: center;
 }
 
 .txt-left {
-    text-align: left;
+  text-align: left;
 }
 
 .txt-right {
-    text-align: right;
+  text-align: right;
 }
 
 .hide {
-    display: none !important;
+  display: none !important;
 }
 
 .icon-svg-tooltip {
-    @include _flexBox;
+  @include _flexBox;
 }
 
 .img-60 {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .flx-center {
-    @include _flexBox;
-    &.align-left {
-        justify-content: flex-start;
-    }
-    &.align-right {
-        justify-content: flex-end;
-    }
+  @include _flexBox;
+  &.align-left {
+    justify-content: flex-start;
+  }
+  &.align-right {
+    justify-content: flex-end;
+  }
 }
 
 .copy-icon.ant-typography {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 @include _responsive(lg) {
-    .container {
-        padding: 0 20px;
-    }
+  .container {
+    padding: 0 20px;
+  }
 }
 
 @for $i from 0 through 32 {
-    @if ($i % 2) == 0 {
-        .mt-#{$i} {
-            margin-top: #{$i}px !important;
-        }
-        .mr-#{$i} {
-            margin-right: #{$i}px !important;
-        }
-        .mb-#{$i} {
-            margin-bottom: #{$i}px !important;
-        }
-        .ml-#{$i} {
-            margin-left: #{$i}px !important;
-        }
-        .pt-#{$i} {
-            padding-top: #{$i}px !important;
-        }
-        .pr-#{$i} {
-            padding-right: #{$i}px !important;
-        }
-        .pb-#{$i} {
-            padding-bottom: #{$i}px !important;
-        }
-        .pl-#{$i} {
-            padding-left: #{$i}px !important;
-        }
-        .m-tb-#{$i} {
-            margin-top: #{$i}px !important;
-            margin-bottom: #{$i}px !important;
-        }
-        .m-lr-#{$i} {
-            margin-left: #{$i}px !important;
-            margin-right: #{$i}px !important;
-        }
-        .m-#{$i} {
-            margin: #{$i}px !important;
-        }
-        .p-tb-#{$i} {
-            padding-top: #{$i}px !important;
-            padding-bottom: #{$i}px !important;
-        }
-        .p-lr-#{$i} {
-            padding-left: #{$i}px !important;
-            padding-right: #{$i}px !important;
-        }
-        .p-#{$i} {
-            padding: #{$i}px !important;
-        }
+  @if ($i % 2) == 0 {
+    .mt-#{$i} {
+      margin-top: #{$i}px !important;
     }
+    .mr-#{$i} {
+      margin-right: #{$i}px !important;
+    }
+    .mb-#{$i} {
+      margin-bottom: #{$i}px !important;
+    }
+    .ml-#{$i} {
+      margin-left: #{$i}px !important;
+    }
+    .pt-#{$i} {
+      padding-top: #{$i}px !important;
+    }
+    .pr-#{$i} {
+      padding-right: #{$i}px !important;
+    }
+    .pb-#{$i} {
+      padding-bottom: #{$i}px !important;
+    }
+    .pl-#{$i} {
+      padding-left: #{$i}px !important;
+    }
+    .m-tb-#{$i} {
+      margin-top: #{$i}px !important;
+      margin-bottom: #{$i}px !important;
+    }
+    .m-lr-#{$i} {
+      margin-left: #{$i}px !important;
+      margin-right: #{$i}px !important;
+    }
+    .m-#{$i} {
+      margin: #{$i}px !important;
+    }
+    .p-tb-#{$i} {
+      padding-top: #{$i}px !important;
+      padding-bottom: #{$i}px !important;
+    }
+    .p-lr-#{$i} {
+      padding-left: #{$i}px !important;
+      padding-right: #{$i}px !important;
+    }
+    .p-#{$i} {
+      padding: #{$i}px !important;
+    }
+  }
 }
 
 .w-100 {
-    width: 100%;
+  width: 100%;
 }

@@ -15,7 +15,7 @@ export const KEY_ROOT_STORE = 'nftify_bridge';
 const persistConfig = {
   key: KEY_ROOT_STORE,
   storage: storage,
-  // whitelist: ['addressReducer', 'listTokenReducer'],
+  whitelist: [],
   // blacklist: ['addressReducer.errorNetwork'],
 };
 

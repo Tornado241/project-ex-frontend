@@ -9,7 +9,7 @@ const { Content } = Layout;
 function LayoutCommon() {
   return (
     <Layout className="layout">
-      <HeaderCommon />
+      {/* <HeaderCommon /> */}
       <Content>
         <Switch>
           {routes.map((route, index) => (
@@ -17,7 +17,7 @@ function LayoutCommon() {
           ))}
         </Switch>
       </Content>
-      <FooterComponent />
+      {/* <FooterComponent /> */}
     </Layout>
   );
 }
