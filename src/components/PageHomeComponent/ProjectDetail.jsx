@@ -66,7 +66,7 @@ export const ProjectDetail = ({ project, callbackEdit, callbackRemove }) => {
         </Row>
         <Col xs={24}>
           {project?.file ? (
-            <Button type="link" href={getUrlAPI(project?.file)} target="_blank" icon={<SearchOutlined />}>
+            <Button type="link" href={getUrlAPI(project.file)} target="_blank" icon={<SearchOutlined />}>
               Xem file
             </Button>
           ) : (

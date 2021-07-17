@@ -1,8 +1,7 @@
 .home {
   &__container {
     max-width: 1280px;
-    margin: auto;
-    margin-top: 100px;
+    margin: 50px auto;
   }
   .title-page.ant-typography {
     text-align: center;
@@ -42,13 +41,24 @@ main.ant-layout-content {
       margin-right: 8px;
     }
   }
-  .ant-btn-link {
-    border: solid 1px #1890ff;
+}
+
+.ant-btn-link {
+  border: solid 1px #1890ff !important;
+  margin-right: 12px;
+  &:hover {
+    opacity: 0.7;
   }
 }
 
 .ant-btn.ant-btn-primary span {
   color: white;
+  font-weight: bold;
+}
+
+.ant-btn.ant-btn-primary.btn-warning {
+  background: #ffd03a;
+  border-color: #ffd03a;
 }
 
 .form-project {

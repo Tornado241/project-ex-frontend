@@ -14,14 +14,14 @@ import { AvatarStudent } from './AvatarStudent';
 export const TableHomePage = ({ callbackViewDetail }) => {
   const dipatch = useDispatch();
 
-  const { paramsProject } = useParamsProject();
+  const { paramsProject, callbackChangePage } = useParamsProject();
   const { totalPages, currentPage } = paramsProject;
 
   const { projects, totalProjects, isLoadingListProjects, isLoadingListProjectsDetail } = useSelector(store => store.projectReducer);
 
   useEffect(() => {
-    dipatch(projectActions.getAllProject());
-  }, []);
+    dipatch(projectActions.getAllProject(paramsProject));
+  }, [paramsProject]);
 
   useEffect(() => {
     if (!isLoadingListProjectsDetail) {
@@ -77,7 +77,15 @@ export const TableHomePage = ({ callbackViewDetail }) => {
   ];
   return (
     <LoadingCircleComponent spinning={isLoadingListProjects}>
-      <TableCommon bordered={false} columns={columns} dataSource={projects} current={currentPage} total={totalProjects} pageSize={totalPages} />
+      <TableCommon
+        onChangePagination={callbackChangePage}
+        bordered={false}
+        columns={columns}
+        dataSource={projects}
+        current={currentPage + 1}
+        total={totalProjects}
+        pageSize={totalPages}
+      />
     </LoadingCircleComponent>
   );
 };

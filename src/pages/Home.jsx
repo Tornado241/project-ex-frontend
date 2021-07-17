@@ -33,6 +33,10 @@ function HomePage() {
     dispatch(projectActions.createProject(formData));
   });
 
+  const onEditProject = useCallback((formdData, id) => {
+    dispatch(projectActions.updateProject(formdData, id));
+  });
+
   const toggleModalDetail = () => {
     setVisibleModalDetail(visibleModalDetail => !visibleModalDetail);
   };
@@ -44,10 +48,14 @@ function HomePage() {
 
   const callbackEdit = () => {
     setEditMode(true);
+    setVisibleModalDetail(false);
     setVisibleAddProject(true);
   };
 
-  const callbackRemove = () => {};
+  const callbackRemove = () => {
+    setVisibleModalDetail(false);
+    dispatch(projectActions.deleteProject(projectDetail?.id));
+  };
 
   return (
     <Box className="home home__container">
@@ -64,6 +72,7 @@ function HomePage() {
       <Drawer width={640} placement="right" onClose={toggleAddProject} visible={visibleAddProject}>
         <FormProject
           editMode={editMode}
+          callbackUpdate={onEditProject}
           projectDetail={projectDetail}
           isLoadingListProjectsDetail={isLoadingListProjectsDetail}
           callbackSubmit={onAddProject}

@@ -5,5 +5,9 @@ export const useParamsProject = () => {
     totalPages: 10,
     currentPage: 0,
   });
-  return { paramsProject };
+
+  const callbackChangePage = (currentPage, totalPages) => {
+    setPramsProject({ ...paramsProject, totalPages, currentPage: currentPage - 1 });
+  };
+  return { paramsProject, callbackChangePage };
 };

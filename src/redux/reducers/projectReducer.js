@@ -9,10 +9,14 @@ const DEFAULT_STATE = {
 export const projectReducer = (state = DEFAULT_STATE, action) => {
   switch (action.type) {
     case projectActionTypes.CREATE_PROJECT_ERROR:
+    case projectActionTypes.UPDATE_PROJECT_ERROR:
+    case projectActionTypes.DELETE_PROJECT_SUCCESS:
+    case projectActionTypes.DELETE_PROJECT_ERROR:
       return { ...state, isLoadingListProjectsDetail: false };
     case projectActionTypes.CREATE_PROJECT_START:
+    case projectActionTypes.UPDATE_PROJECT_START:
+    case projectActionTypes.DELETE_PROJECT_START:
       return { ...state, isLoadingListProjectsDetail: true };
-
     case projectActionTypes.GET_ALL_PROJECT_START:
       return { ...state, isLoadingListProjects: true };
     case projectActionTypes.GET_ALL_PROJECT_ERROR:
@@ -24,6 +28,7 @@ export const projectReducer = (state = DEFAULT_STATE, action) => {
         totalProjects: action.payload?.totalItems,
         isLoadingListProjects: false,
       };
+    case projectActionTypes.UPDATE_PROJECT_SUCCESS:
     case projectActionTypes.CREATE_PROJECT_SUCCESS: {
       return { ...state, isLoadingListProjectsDetail: false };
     }
