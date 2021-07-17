@@ -23,24 +23,32 @@ export const SelectComponent = ({
   classWrap = '',
   ...props
 }) => {
-  const [valueFilter, setValueFilter] = useState('');
   const touched = formTouched[name];
   const errorMessage = formErrors[name];
-
-  useEffect(() => {
-    if (fillterBy) {
-      setValueFilter(formValues[fillterBy]);
-    }
-  }, [formValues]);
 
   const handlechangeField = changeVal => {
     setFieldValue(name, changeVal);
     callbackChangeValue && callbackChangeValue({ name, changeVal, oldValue: value });
   };
 
+  options = [
+    {
+      id: 1,
+      label: 'Đang xem xét',
+    },
+    {
+      id: 2,
+      label: 'Hủy',
+    },
+    {
+      id: 3,
+      label: 'Đã xong',
+    },
+  ];
+
   return (
     <div className={clsx('field-wrap', [classWrap] && classWrap)}>
-      {label && <label className="field-wrap__label">{label.toLocaleUpperCase()}</label>}
+      {label && <label className="field-wrap__label">{label}</label>}
       <Select
         className={`app-select ${className}`}
         dropdownClassName="app-select-dropdown"
@@ -48,14 +56,15 @@ export const SelectComponent = ({
         onChange={handlechangeField}
         placeholder={placeholder}
         disabled={disabled}
+        value={value}
         {...props}>
         {options.map(item => (
           <Option
-            disabled={!item.is_enabled}
-            className={{ 'app-select-option': true, hide: valueFilter && valueFilter === item.value }}
+            // disabled={!item.is_enabled}
+            // className={{ 'app-select-option': true, hide: valueFilter && valueFilter === item.value }}
             key={item.id}
-            value={item.value}>
-            <img className="icon-option" src={item.url} alt={item.label} />
+            value={item.id}>
+            {/* <img className="icon-option" src={item.url} alt={item.label} /> */}
             {item.label}
           </Option>
         ))}

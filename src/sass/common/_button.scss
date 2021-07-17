@@ -5,7 +5,6 @@
     transition: 0.5s;
     position: relative;
     z-index: 1;
-
     &:before {
       border-radius: inherit;
       background-image: $color_bg_button_primary-hover;

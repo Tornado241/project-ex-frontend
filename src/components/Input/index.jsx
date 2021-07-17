@@ -26,12 +26,17 @@ export const InputComponent = ({
     callbackChangeValue && callbackChangeValue({ name, value: valueEvent });
   };
 
+  const handleBlur = () => {
+    setFieldValue(name, value?.toString().trim());
+  };
+
   return (
     <div className={clsx('field-wrap', [classWrap] && classWrap)}>
       {label && <label className="field-wrap__label">{label}</label>}
       <Input
         onChange={handlechangeField}
         value={value}
+        onBlur={handleBlur}
         className={`app-input ${className}`}
         placeholder={placeholder}
         prefix={prefix}

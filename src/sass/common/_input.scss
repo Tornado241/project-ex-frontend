@@ -1,40 +1,40 @@
-@mixin textStyleInputSwapCoin {
-  font-size: $font_size_base;
-  line-height: 26px;
-  letter-spacing: -0.003em;
-  color: $color_text_select;
-}
+// @mixin textStyleInputSwapCoin {
+//   font-size: $font_size_base;
+//   line-height: 26px;
+//   letter-spacing: -0.003em;
+//   color: $color_text_select;
+// }
 
-.app-input {
-  padding-left: 16px;
-  padding-right: 6px;
-  &.ant-input-affix-wrapper,
-  &.ant-input-number,
-  &.ant-input {
-    height: 52px;
-    width: 100%;
-    border-radius: 15px;
-  }
-  .ant-input,
-  .ant-input-number {
-    @include textStyleInputSwapCoin;
-  }
-  &.ant-input-borderless,
-  &.ant-input-number-borderless,
-  &.ant-input-number-borderless input {
-    height: 35px;
-    padding: 0;
-    @include textStyleInputSwapCoin;
-  }
-  &.ant-input-disabled {
-    background: $color_bg_disable;
-  }
-}
+// .app-input {
+//   padding-left: 16px;
+//   padding-right: 6px;
+//   &.ant-input-affix-wrapper,
+//   &.ant-input-number,
+//   &.ant-input {
+//     height: 52px;
+//     width: 100%;
+//     border-radius: 15px;
+//   }
+//   .ant-input,
+//   .ant-input-number {
+//     @include textStyleInputSwapCoin;
+//   }
+//   &.ant-input-borderless,
+//   &.ant-input-number-borderless,
+//   &.ant-input-number-borderless input {
+//     height: 35px;
+//     padding: 0;
+//     @include textStyleInputSwapCoin;
+//   }
+//   &.ant-input-disabled {
+//     background: $color_bg_disable;
+//   }
+// }
 
-input::placeholder {
-  @include textStyleInputSwapCoin;
-  font-size: $font_size_base - 2;
-}
+// input::placeholder {
+//   @include textStyleInputSwapCoin;
+//   font-size: $font_size_base - 2;
+// }
 
 .field-wrap {
   width: 100%;
@@ -62,87 +62,87 @@ input::placeholder {
   }
 }
 
-.form {
-  &__row {
-    display: flex;
-    align-items: center;
-  }
-  &__label.ant-typography {
-    font-weight: 500;
-    font-size: $font_size_base - 4;
-    line-height: 12px;
-  }
-}
+// .form {
+//   &__row {
+//     display: flex;
+//     align-items: center;
+//   }
+//   &__label.ant-typography {
+//     font-weight: 500;
+//     font-size: $font_size_base - 4;
+//     line-height: 12px;
+//   }
+// }
 
-.fom-border {
-  .ant-input.app-input {
-    border-width: 1px !important;
-    &::placeholder {
-      @include textStyleInputSwapCoin;
-      font-size: $font_size_base - 2;
-    }
-  }
-  .ant-select.app-select {
-    .ant-select-selector {
-      border: 1px solid $color_border_input;
-      border-right-width: 1px !important;
-      height: 46px;
-      background-color: transparent;
-      border-radius: 12px;
-      overflow: hidden;
-      @include _flexBox;
-      input::placeholder {
-        @include textStyleInputSwapCoin;
-        font-size: $font_size_base - 2;
-      }
-    }
-  }
-  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
-    border-right-width: 1px !important;
-  }
-  .ant-input-number.app-input {
-    height: 46px;
-    border: 1px solid $color_border_input;
-    border-right-width: 1px !important;
-    padding: 0;
-    input::placeholder {
-      @include textStyleInputSwapCoin;
-      font-size: $font_size_base - 2;
-    }
-    &:hover,
-    &:focus {
-      border-color: #40a9ff;
-    }
-    @include _flexBox;
-    .ant-input-number-handler-wrap {
-      display: none;
-    }
-  }
-  .ant-checkbox-group {
-    width: 100%;
-  }
-  .ant-checkbox-wrapper {
-    span {
-      font-size: $font_size_base - 4;
-      color: $color_title_section;
-    }
-  }
-}
+// .fom-border {
+//   .ant-input.app-input {
+//     border-width: 1px !important;
+//     &::placeholder {
+//       @include textStyleInputSwapCoin;
+//       font-size: $font_size_base - 2;
+//     }
+//   }
+//   .ant-select.app-select {
+//     .ant-select-selector {
+//       border: 1px solid $color_border_input;
+//       border-right-width: 1px !important;
+//       height: 46px;
+//       background-color: transparent;
+//       border-radius: 12px;
+//       overflow: hidden;
+//       @include _flexBox;
+//       input::placeholder {
+//         @include textStyleInputSwapCoin;
+//         font-size: $font_size_base - 2;
+//       }
+//     }
+//   }
+//   .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+//     border-right-width: 1px !important;
+//   }
+//   .ant-input-number.app-input {
+//     height: 46px;
+//     border: 1px solid $color_border_input;
+//     border-right-width: 1px !important;
+//     padding: 0;
+//     input::placeholder {
+//       @include textStyleInputSwapCoin;
+//       font-size: $font_size_base - 2;
+//     }
+//     &:hover,
+//     &:focus {
+//       border-color: #40a9ff;
+//     }
+//     @include _flexBox;
+//     .ant-input-number-handler-wrap {
+//       display: none;
+//     }
+//   }
+//   .ant-checkbox-group {
+//     width: 100%;
+//   }
+//   .ant-checkbox-wrapper {
+//     span {
+//       font-size: $font_size_base - 4;
+//       color: $color_title_section;
+//     }
+//   }
+// }
 
-.ant-picker.app-date-picker {
-  width: 100%;
-  border: 1px solid $color_border_input;
-  border-width: 1px !important;
-  height: 46px;
-  background-color: transparent;
-  border-radius: 12px;
-  overflow: hidden;
-  &:hover,
-  &:focus {
-    border-color: #40a9ff;
-  }
-  input::placeholder {
-    @include textStyleInputSwapCoin;
-    font-size: $font_size_base - 2;
-  }
-}
+// .ant-picker.app-date-picker {
+//   width: 100%;
+//   border: 1px solid $color_border_input;
+//   border-width: 1px !important;
+//   height: 46px;
+//   background-color: transparent;
+//   border-radius: 12px;
+//   overflow: hidden;
+//   &:hover,
+//   &:focus {
+//     border-color: #40a9ff;
+//   }
+//   input::placeholder {
+//     @include textStyleInputSwapCoin;
+//     font-size: $font_size_base - 2;
+//   }
+// }

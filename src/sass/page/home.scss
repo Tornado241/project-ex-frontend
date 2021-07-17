@@ -16,3 +16,53 @@
 main.ant-layout-content {
   background-color: white;
 }
+
+.lb-detail {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.project-detail {
+  &__title {
+    font-size: $font_size_base + 10;
+    font-weight: bold;
+  }
+  &__info {
+    font-size: $font_size_base + 1;
+    // margin-bottom: 14px;
+    div.ant-typography {
+      margin: 0;
+    }
+    div.label.ant-typography {
+      font-weight: bold;
+      margin-right: 8px;
+    }
+  }
+  .ant-btn-link {
+    border: solid 1px #1890ff;
+  }
+}
+
+.ant-btn.ant-btn-primary span {
+  color: white;
+}
+
+.form-project {
+  .title-form {
+    font-size: $font_size_base + 10;
+  }
+}
+
+.title-upload.ant-typography {
+  font-size: $font_size_base;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.avatar-app .ant-avatar {
+  min-width: 32px;
+}

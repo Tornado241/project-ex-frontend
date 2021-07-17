@@ -1,82 +1,83 @@
 .app-select.ant-select {
-    width: 100%;
-    .ant-select-selector {
-        height: 35px;
-        padding: 0 16px;
-        // border-radius: 24px;
-        .ant-select-selection-placeholder,
-        .ant-select-selection-item,
-        input {
-            color: $color_select_text !important;
-            font-weight: 500;
-            font-size: $font_size_base - 2;
-            line-height: 21px;
-            display: flex;
-            align-items: center;
-            height: 35px !important;
-        }
-        input {
-            padding: 0 6px !important;
-        }
-    }
-    .ant-select-arrow {
-        right: 10px;
-    }
-    &.ant-select-borderless {
-        background-color: $color_bg_select_less;
-        border-radius: 10px;
-        .ant-select-selector {
-            padding: 0 10px;
-        }
-        .ant-select-selection-item {
-            padding-right: 0;
-        }
-    }
+  width: 100%;
 }
+//     .ant-select-selector {
+//         height: 35px;
+//         padding: 0 16px;
+//         // border-radius: 24px;
+//         .ant-select-selection-placeholder,
+//         .ant-select-selection-item,
+//         input {
+//             color: $color_select_text !important;
+//             font-weight: 500;
+//             font-size: $font_size_base - 2;
+//             line-height: 21px;
+//             display: flex;
+//             align-items: center;
+//             height: 35px !important;
+//         }
+//         input {
+//             padding: 0 6px !important;
+//         }
+//     }
+//     .ant-select-arrow {
+//         right: 10px;
+//     }
+//     &.ant-select-borderless {
+//         background-color: $color_bg_select_less;
+//         border-radius: 10px;
+//         .ant-select-selector {
+//             padding: 0 10px;
+//         }
+//         .ant-select-selection-item {
+//             padding-right: 0;
+//         }
+//     }
+// }
 
-.ant-select-selection-item img,
-.app-select-option img {
-    margin-right: 4px;
-    width: 20px;
-}
+// .ant-select-selection-item img,
+// .app-select-option img {
+//     margin-right: 4px;
+//     width: 20px;
+// }
 
-.hide.app-select-option {
-    display: none;
-}
+// .hide.app-select-option {
+//     display: none;
+// }
 
-.ant-select-item-option-disabled {
-    opacity: 0.2;
-    background-color: rgb(177, 177, 177);
-}
+// .ant-select-item-option-disabled {
+//     opacity: 0.2;
+//     background-color: rgb(177, 177, 177);
+// }
 
-.ant-select-dropdown.app-select-dropdown {
-    padding-top: 5px;
-    background: transparent !important;
-    box-shadow: none !important;
-    overflow: unset;
-    > div {
-        background: white;
-        border-radius: 10px;
-        background: #ffffff;
-        box-shadow: 0px 16px 64px rgba(31, 47, 70, 0.2);
-        overflow: hidden;
-    }
-    .ant-select-item.ant-select-item-option {
-        color: $color_text_select;
-        font-weight: 600;
-        font-size: $font_size_base - 2;
-        line-height: 16px;
-        min-height: 47px;
-        padding: 0 16px;
-        .ant-select-item-option-content {
-            align-items: center;
-            display: flex;
-            border-bottom: solid 1px $color_border_input;
-        }
-        &:last-child {
-            .ant-select-item-option-content {
-                border-bottom: unset;
-            }
-        }
-    }
-}
+// .ant-select-dropdown.app-select-dropdown {
+//     padding-top: 5px;
+//     background: transparent !important;
+//     box-shadow: none !important;
+//     overflow: unset;
+//     > div {
+//         background: white;
+//         border-radius: 10px;
+//         background: #ffffff;
+//         box-shadow: 0px 16px 64px rgba(31, 47, 70, 0.2);
+//         overflow: hidden;
+//     }
+//     .ant-select-item.ant-select-item-option {
+//         color: $color_text_select;
+//         font-weight: 600;
+//         font-size: $font_size_base - 2;
+//         line-height: 16px;
+//         min-height: 47px;
+//         padding: 0 16px;
+//         .ant-select-item-option-content {
+//             align-items: center;
+//             display: flex;
+//             border-bottom: solid 1px $color_border_input;
+//         }
+//         &:last-child {
+//             .ant-select-item-option-content {
+//                 border-bottom: unset;
+//             }
+//         }
+//     }
+// }
